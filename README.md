@@ -15,7 +15,7 @@ the entire story, and he responded
 
 > Wow! That is AGGRESSIVELY useless!
 
-At that point I know I must tell the world...
+At that point I knew I must tell the world...
 
 # FAQ
 

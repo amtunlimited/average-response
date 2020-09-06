@@ -32,10 +32,13 @@ let sum = arr => arr.reduce((a,b) => a+b, 0);
 // If someone finds the REST API documentation, please let me know so I can link 
 // it here. I had to dig through the code for their automatic dashboard maker
 // thing to find these URLs
-let tele_url = ver_date => "https://aggregates.telemetry.mozilla.org/aggregates_by/submission_date/channels/nightly/" +
-	"?metric=HTTP_RESPONSE_STATUS_CODE" +
-	"&version=" + ver_date["version"] +
-	"&dates=" + ver_date["date"];
+let tele_url = ver_date => {
+  result = new URL("https://aggregates.telemetry.mozilla.org/aggregates_by/submission_date/channels/nightly/");
+  result.searchParams.append("metric", "HTTP_RESPONSE_STATUS_CODE");
+  result.searchParams.append("version", ver_date["version"]);
+  result.searchParams.append("dates", ver_date["date"]);
+  return result.href;
+}
 
 // This URL returns a json list of the most recent dates of histograms with the
 // nightly version associated with it.

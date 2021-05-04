@@ -1,5 +1,11 @@
 # The Average HTTP Response
 
+> You know when someone makes a really good pun and everyone just sighs at it
+> in a combination of frustration and approval? This is the sort of code that
+> gets that reaction.
+>
+> --Some Bloke
+
 As calculated from the most recent daily batch of 
 [telemetry data](https://telemetry.mozilla.org/) from the Firefox nightly build.
 
